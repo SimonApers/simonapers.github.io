@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Internships</title>
+<meta charset="UTF-8">
+<meta name="description" content="Internships">
+<meta name="keywords" content="Internships">
+<meta name="author" content="Simon Apers">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<h2>Student internships</h2>
+
+If you are interested in doing an internship on the topic of quantum algorithms and computing, feel free to contact me at <a href="mailto:simon.apers@irif.fr">simon.apers@irif.fr</A>.
+Here are some suggested topics:
+
+<p>
+<ul>
+  <li> <b> Quantum algorithms for graph spanners and sparsifiers. </b>
+	<br><br>
+	A graph spanner is a sparse subgraph that approximately preserves shortest-path distances. In a <a href="https://arxiv.org/abs/1911.07306">recent work</a>, a quantum algorithm for constructing graph spanners was described. This was used to obtain faster quantum algorithms for a wide range of graph problems such as graph sparsification, computing the minimum cut, and solving Laplacian systems. The aim of this project is to find a faster quantum algorithm for constructing a spanner of an *unweighted* graph. This would lead to faster algorithms for all of the aforementioned problems as well.
+	<br><br>
+	Reference: <a href="https://arxiv.org/abs/1911.07306">arXiv:1911.07306</a>.
+  </li><br>
+
+  <li> <b> Quantum inspired algorithms for topological data analysis. </b>
+	<br><br>
+	The use of quantum computers for machine learning (ML) is an exciting perspective, and a number of quantum algorithms for ML have been claimed to provide exponential speedups over the best classical algorithms. Somewhat surprisingly, many of these claims were recently disproved by a new flavor of *classical* algorithms that provide similar speedups.
+One quantum algorithm whose claimed exponential speedup has not been disproven is that for topological data analysis by Lloyd, Garnerone and Zanardi (<a href="https://www.nature.com/articles/ncomms10138">link</a>). The quantum algorithm uses Hamiltonian simulation and phase estimation to efficiently approximate the Betti number of a simplicial complex. The goal of this project is to take inspiration from the quantum algorithm to investigate classical algorithms for the approximating Betti numbers.
+	<br><br>
+	References: <a href="https://arxiv.org/abs/2005.02607">arXiv:2005.02607</a>, <a href="https://www.quantamagazine.org/teenager-finds-classical-alternative-to-quantum-recommendation-algorithm-20180731/">Quanta magazine article</a>.
+  </li><br>
+
+  <li> <b> Optimal quantum walk search. </b> (co-supervised with F. Magniez)
+	<br><br>
+	Quantum walks on graphs are the quantum analogue of random walks on graphs. They can be used to find marked vertices in a graph quadratically faster than the random walk hitting time. This speedup is similar to the quadratic speedup that Grover search gives for unstructured search problems. Currently, however, there is a tradeoff in the complexity of quantum walk search: either it makes an optimal number of quantum walk steps on the graph, or it makes an optimal number of "checks", where a check tests whether a vertex is marked or not. The goal of this project is to investigate this tradeoff, and ideally show that there is a quantum walk algorithm that is optimal on both accounts.
+	<br><br>
+	References: <a href="https://arxiv.org/abs/1912.04233">arXiv:1912.04233</a>, <a href="https://arxiv.org/abs/quant-ph/0608026">arXiv:quant-ph/0608026</a>.
+  </li><br>
+
+  <li> <b> Finding many elements with quantum walk search. </b> (co-supervised with A. Chailloux)
+	<br><br>
+	Quantum walk search was most famously used by Ambainis in his quantum algorithm for element distinctness (<a href="https://arxiv.org/abs/quant-ph/0311001">link</a>), which amounts to finding a collision of a given input function (i.e., x and y such that f(x)=f(y)). This algorithm is the key building block of a broad range of other quantum algorithms in cryptography, property testing, etc. At its core is a quantum walk algorithm for finding a marked element on the Johnson graph quadratically faster. Such a marked element corresponds to a collision in the input function. A recent work by Chailloux and Loyer (<a href="https://arxiv.org/abs/2105.05608">arXiv:2105.05608</a>) raised the interesting question of whether *multiple* collisions can be found more efficiently then just repeatedly running Ambainis' algorithm. The goal of this project is to investigate this question, which more abstractly amounts to investigating the use of quantum walk search for finding many marked elements.
+	<br><br>
+	Reference: <a href="https://arxiv.org/abs/2105.05608">arXiv:2105.05608</a>.
+  </li>
+</ul>
+</p>
+
+</body>
+</html>
