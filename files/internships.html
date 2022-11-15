@@ -11,7 +11,7 @@
 <body>
 <h2>Student internships</h2>
 
-If you are interested in doing an internship on the topic of quantum algorithms and computing, feel free to contact me at <a href="mailto:simon.apers@irif.fr">simon.apers@irif.fr</A>.
+If you are interested in doing an internship on the topic of quantum algorithms and computing, feel free to contact me at <a href="mailto:apers@irif.fr">apers@irif.fr</A>.
 Here are some suggested topics:
 
 <p>
@@ -19,23 +19,19 @@ Here are some suggested topics:
   <li> <b> Quantum algorithms for graph spanners and sparsifiers. </b>
 	<br><br>
 	A graph spanner is a sparse subgraph that approximately preserves shortest-path distances. In a <a href="https://arxiv.org/abs/1911.07306">recent work</a>, a quantum algorithm for constructing graph spanners was described. This was used to obtain faster quantum algorithms for a wide range of graph problems such as graph sparsification, computing the minimum cut, and solving Laplacian systems. The aim of this project is to find a faster quantum algorithm for constructing a spanner of an *unweighted* graph. This would lead to faster algorithms for all of the aforementioned problems as well.
-	<br><br>
-	Reference: <a href="https://arxiv.org/abs/1911.07306">arXiv:1911.07306</a>.
+	<br>
   </li><br>
 
-  <li> <b> Quantum inspired algorithms for topological data analysis. </b>
+  <li> <b> Quantum algorithm for tree edit distance. </b>
 	<br><br>
-	The use of quantum computers for machine learning (ML) is an exciting perspective, and a number of quantum algorithms for ML have been claimed to provide exponential speedups over the best classical algorithms. Somewhat surprisingly, many of these claims were recently disproved by a new flavor of *classical* algorithms that provide similar speedups.
-One quantum algorithm whose claimed exponential speedup has not been disproven is that for topological data analysis by Lloyd, Garnerone and Zanardi (<a href="https://www.nature.com/articles/ncomms10138">link</a>). The quantum algorithm uses Hamiltonian simulation and phase estimation to efficiently approximate the Betti number of a simplicial complex. The goal of this project is to take inspiration from the quantum algorithm to investigate classical algorithms for the approximating Betti numbers.
-	<br><br>
-	References: <a href="https://arxiv.org/abs/2005.02607">arXiv:2005.02607</a>, <a href="https://www.quantamagazine.org/teenager-finds-classical-alternative-to-quantum-recommendation-algorithm-20180731/">Quanta magazine article</a>.
+	While we know quantum speedups for many problems in optimization, the problem of computing the "edit distance" between two strings has always evaded a quantum speedup. Recent work in quantum fine-grained complexity suggests that in no fact quantum speedup is possible for this problem (<a href="https://drops.dagstuhl.de/opus/volltexte/2021/13664/pdf/LIPIcs-STACS-2021-19.pdf">link</a>). A closely related and apparently more motivated problem is that of "tree edit distance", where the goal is to compute the edit distance between two tree graphs instead of two strings. This problem is closely related to computing the max-plus product, for which we do know a quantum speedup. The aim of this project is to study quantum algorithms for tree edit distance, potentially by building on dynamic programming techniques (<a href="https://epubs.siam.org/doi/10.1137/0218082">link</a>, <a href="https://arxiv.org/abs/2106.02026">link</a>).
+	<br>
   </li><br>
 
-  <li> <b> Optimal quantum walk search. </b> (co-supervised with F. Magniez)
+  <li> <b> OR-query complexity of graph matching. </b>
 	<br><br>
-	Quantum walks on graphs are the quantum analogue of random walks on graphs. They can be used to find marked vertices in a graph quadratically faster than the random walk hitting time. This speedup is similar to the quadratic speedup that Grover search gives for unstructured search problems. Currently, however, there is a tradeoff in the complexity of quantum walk search: either it makes an optimal number of quantum walk steps on the graph, or it makes an optimal number of "checks", where a check tests whether a vertex is marked or not. The goal of this project is to investigate this tradeoff, and ideally show that there is a quantum walk algorithm that is optimal on both accounts.
-	<br><br>
-	References: <a href="https://arxiv.org/abs/1912.04233">arXiv:1912.04233</a>, <a href="https://arxiv.org/abs/quant-ph/0608026">arXiv:quant-ph/0608026</a>.
+	Query complexity studies the number of "queries" or "probes" that one has to make to an object to learn something about it. In a recent work (<a href="https://arxiv.org/abs/2208.02526">arXiv:2208.02526</a>), it was shown that the OR-query complexity of <em>bipartite</em> matching is almost-linear. They used this to bound the <em>quantum</em> query complexity of bipartite matching. In this project we aim to bound the OR-query complexity of <em>general</em> matching by working the other way around. There is a quantum query algorithm for general matching (<a href="https://arxiv.org/abs/2010.02324">arXiv:2010.02324</a>), and we will try to use this to bound the OR-query complexity of general matching.
+	<br>
   </li><br>
 
   <!--
