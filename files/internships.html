@@ -16,11 +16,17 @@ Here are some suggested topics:
 
 <p>
 <ul>
-  <li> <b> Quantum algorithms and dynamic data structures. </b>
+  <li> <b> Quantum HITS. </b>
 	<br><br>
-	Dynamic data structures play a key role in the fastest algorithms for problems in optimization, statistics and string processing. At their core, these data structures maintain a clever sketch of data that continually undergoes changes (e.g., when edges are added or removed in a graph). As quantum algorithms are known to provide speedups over many data processing tasks, it is anticipated that quantum algorithms can also improve over the best dynamic data structures. A recent example is a faster quantum algorithm for zero-sum games (<a href="https://arxiv.org/abs/2301.03763">arXiv:2301.03763</A>). The purpose of this internship is to study the relevants concepts in quantum computing and dynamic data structures, and to try and combine these to obtain faster quantum data structures for dynamic data. Joint supervision with Frédéric Magniez.
+	The <a href="https://en.wikipedia.org/wiki/HITS_algorithm">HITS algorithm</a> is a web link analysis algorithm proposed by Jon Kleinberg, comparable to Google's PageRank algorithm. It is based on the singular value decomposition of the adjacency matrix of a directed graph. In contrast to Google's PageRank algorithm, there is no known space-efficient implementation of the HITS algorithm. Aim of the project is to develop a space-efficient quantum implementation of the HITS algorithm. Starting point is a recent work (<a href="https://arxiv.org/abs/2408.12473">arXiv:2408.12473</a>) showing a quantum space advantage for solving connectivity on directed graphs.
 	<br>
 	</li><br>
+
+  <li> <b> Quantum expansion testing. </b>
+	<br><br>
+	In the field of property testing, we wish to determine whether an object has a certain property, or whether it is "far" from having that property. A classic example is "expansion testing", where we want to test whether a graph is an expander, or whether it is far from being an expander -- see <a href="https://www.wisdom.weizmann.ac.il/~oded/COL/gr3.pdf">"On testing expansion in bounded-degree graphs"</a> by Goldreich and Ron. Aim of this project is to extend these ideas to the quantum setting, where we wish to test whether a given quantum channel is a so-called <a href="https://theoryofcomputing.org/articles/v006a003/">"quantum expander"</a>.
+	<br>
+  </li><br>  
 
   <li> <b> Quantum algorithms for graph spanners and sparsifiers. </b>
 	<br><br>
@@ -30,15 +36,15 @@ Here are some suggested topics:
 
   <li> <b> Quantum algorithm for tree edit distance. </b>
 	<br><br>
-	While we know quantum speedups for many problems in optimization, the problem of computing the "edit distance" between two strings has always evaded a quantum speedup. Recent work in quantum fine-grained complexity suggests that in no fact quantum speedup is possible for this problem (<a href="https://drops.dagstuhl.de/opus/volltexte/2021/13664/pdf/LIPIcs-STACS-2021-19.pdf">link</a>). A closely related and apparently more motivated problem is that of "tree edit distance", where the goal is to compute the edit distance between two tree graphs instead of two strings. This problem is closely related to computing the max-plus product, for which we do know a quantum speedup. The aim of this project is to study quantum algorithms for tree edit distance, potentially by building on dynamic programming techniques (<a href="https://epubs.siam.org/doi/10.1137/0218082">link</a>, <a href="https://arxiv.org/abs/2106.02026">link</a>).
+	While we know quantum speedups for many problems in optimization, the problem of computing the "edit distance" between two strings has always evaded a quantum speedup. Recent work in quantum fine-grained complexity suggests that in fact no quantum speedup is possible for this problem (<a href="https://drops.dagstuhl.de/opus/volltexte/2021/13664/pdf/LIPIcs-STACS-2021-19.pdf">link</a>). A closely related and apparently more motivated problem is that of "tree edit distance", where the goal is to compute the edit distance between two tree graphs instead of two strings. This problem is closely related to computing the max-plus product, for which we do know a quantum speedup. The aim of this project is to study quantum algorithms for tree edit distance, potentially by building on dynamic programming techniques (<a href="https://epubs.siam.org/doi/10.1137/0218082">link</a>, <a href="https://arxiv.org/abs/2106.02026">link</a>).
 	<br>
   </li><br>
 
-  <li> <b> OR-query complexity of graph matching. </b>
+  <!--<li> <b> OR-query complexity of graph matching. </b>
 	<br><br>
 	Query complexity studies the number of "queries" or "probes" that one has to make to an object to learn something about it. In a recent work (<a href="https://arxiv.org/abs/2208.02526">arXiv:2208.02526</a>), it was shown that the OR-query complexity of <em>bipartite</em> matching is almost-linear. They used this to bound the <em>quantum</em> query complexity of bipartite matching. In this project we aim to bound the OR-query complexity of <em>general</em> matching by working the other way around. There is a quantum query algorithm for general matching (<a href="https://arxiv.org/abs/2010.02324">arXiv:2010.02324</a>), and we will try to use this to bound the OR-query complexity of general matching.
 	<br>
-  </li><br>
+  </li><br>-->
 
   <li> <b> Quantum s-t connectivity. </b>
 	<br><br>
